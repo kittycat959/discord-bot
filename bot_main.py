@@ -3,7 +3,7 @@ import random
 import time
 
 #setting up the connections
-TOKEN = 'NDg2OTExODc4OTk2NTU3ODM5.DnGBUQ.tWzCfxcVxdnB-w8Q95lsJSPYmzc'
+
 client = discord.Client()
 
 #options for different things
