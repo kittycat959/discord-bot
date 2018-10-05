@@ -1,6 +1,7 @@
 import discord
 import random
 import time
+import os
 
 #setting up the connections
 
@@ -87,4 +88,4 @@ async def on_ready():
     print('------')
 
 #actually connecting the bot
-client.run(TOKEN)
+client.run(os.getenv("TOKEN"))
