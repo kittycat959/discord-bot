@@ -78,6 +78,10 @@ async def on_message(message):
     if message.content.startswith(prefix + 'wiafus'):
         msg = ("Hello {0.author.mention} we currently have " + avaliablewiafu).format(message)
         await client.send_message(message.channel, msg)
+        
+    if 'owo' in message.content:
+        msg = ({0.author.mention}, "whats this?" ).format(message)
+        await client.send_message(message.channel, msg)
 
 #some info about the bot loging in
 @client.event
