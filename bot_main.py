@@ -29,6 +29,10 @@ koyume = ["https://78.media.tumblr.com/b06a67c6e717ca02e74a5edcb305ffab/tumblr_p
 fuura = ["https://78.media.tumblr.com/f4464eafec3cf9960d8d3a12dc917437/tumblr_p8mfsqTSiX1v6j467o1_500.gif","https://i.pinimg.com/originals/9c/81/5d/9c815ddf5843f0e0eae8fa134d81884b.gif","https://i.pinimg.com/originals/b9/9e/8b/b99e8b83a823420601b017ff23338c0f.gif","https://i.pinimg.com/originals/e3/35/63/e335638413cb72a8eea2ad9fd0664efb.gif","https://78.media.tumblr.com/46df86518bb415e8e02d6006203b3b29/tumblr_p8j08xiytj1t0lt8go1_540.gif"]
 nyaos = ["https://2.bp.blogspot.com/-Hbon84eGYck/WuE6Ey2SEcI/AAAAAAABK6Q/BGlNvtsFbhoegepadqsQQwgGrXgBb3YMgCKgBGAs/s1600/Omake%2BGif%2BAnime%2B-%2BComic%2BGirls%2B-%2BEpisode%2B3%2B-%2BNyaos-sensei%2BWears%2Ba%2BHat.gif","https://4.bp.blogspot.com/-AP3bexfpCWc/Wv4DXMuVchI/AAAAAAABMjw/8ip2I7gbSRMDVTUGWaSm-pwQ4uaYvZFRgCKgBGAs/s1600/Omake%2BGif%2BAnime%2B-%2BComic%2BGirls%2B-%2BEpisode%2B7%2B-%2BSad%2BNyaos-Sensei.gif"]
 
+zero_two = ["https://i.pinimg.com/originals/63/ca/58/63ca58fb23c0901176abf1787fa3bfce.gif","https://thumbs.gfycat.com/WideeyedFriendlyBongo-size_restricted.gif","https://media1.tenor.com/images/bfce835bfaf2d1176d490a0491de6b71/tenor.gif?itemid=12138790","https://i.redd.it/ldqbw71khjx01.gif","https://data.whicdn.com/images/309832622/original.gif","https://steamusercontent-a.akamaihd.net/ugc/933807557811236827/C91AF739F6F685446F4B2500A1CC510D4708762B/"]
+
+emilia = ["https://media.giphy.com/media/6srDH6BmmaMvK/giphy.gif","https://media.giphy.com/media/KvoLqIZle18Tm/giphy.gif","https://66.media.tumblr.com/fe779fcee196b534f2dfda13e8eb9de4/tumblr_ottqn7ya8c1v14hqvo1_500.gif","http://pa1.narvii.com/6145/fb722551559221f7dbed9e44299856f507c4222f_hq.gif"]
+
 #generating the list of manga
 manga = ["tokyo ghoul","https://drive.google.com/drive/folders/1XTEfNIaklkYtqfDEs65k4z1QhHOV01r2?usp=sharing","comic girls","https://drive.google.com/open?id=1lBEAGTtlWKh-8Nh2t9qpYuFiJtX8GexA"]
 avaliable = ""
@@ -36,8 +40,8 @@ for x in range(0,(int(len(manga)/2))):
     avaliable = avaliable + manga[x * 2] + ", "
     
 #generating the wiafu list
-waifus = [kanna,tohru,kobayashi,lucoa,saikawa,megumin,aqua,darkness,satou,kaos,ruki,tsubasa,koyume,fuura,nyaos]
-waifus2 = ["kanna","tohru","kobayashi","lucoa","saikawa","megumin","aqua","darkness","satou","kaos","ruki","tsubasa","koyume","fuura","nayos"]
+waifus = [kanna,tohru,kobayashi,lucoa,saikawa,megumin,aqua,darkness,satou,kaos,ruki,tsubasa,koyume,fuura,nyaos,zero_two,emilia]
+waifus2 = ["kanna","tohru","kobayashi","lucoa","saikawa","megumin","aqua","darkness","satou","kaos","ruki","tsubasa","koyume","fuura","nayos","zero_two","emilia"]
 avaliablewiafu = ""
 for x in range(0,int(len(waifus2))):
     avaliablewiafu = avaliablewiafu + waifus2[x] + ", "
@@ -52,7 +56,7 @@ async def on_message(message):
 
     #making the help command
     if message.content.startswith(prefix + 'help'):
-        msg = ("Hello {0.author.mention} to use the bot first see what characters are currently avaliable use /wiafus and then use /(the name of your chosen character)").format(message)
+        msg = ("Hello {0.author.mention} to use the bot first see what characters are currently avaliable use /waifus and then use /(the name of your chosen character)").format(message)
         await client.send_message(message.channel, msg)
     
     #the manga function of the bot
@@ -79,6 +83,12 @@ async def on_message(message):
         msg = ("Hello {0.author.mention} we currently have " + avaliablewiafu).format(message)
         await client.send_message(message.channel, msg)
         
+    if message.content.startswith(prefix + 'waifus'):
+        msg = ("Hello {0.author.mention} we currently have " + avaliablewiafu).format(message)
+        await client.send_message(message.channel, msg)
+    
+    
+    #the owo function of the bot    
     if 'owo' in message.content:
         msg = ("{0.author.mention} whats this?" ).format(message)
         await client.send_message(message.channel, msg)
