@@ -51,7 +51,7 @@ async def on_message(message):
     #making the help command
     if message.content.startswith(prefix + 'help'):
         embed = discord.Embed(
-             description = ("Just type " + prefix + "wiafus to get a lits of avaliable wiafus \n\n Type " + prefix + " folowed by a name of a waifu in order to get a gif of that character \n\n and finaly we have " + prefix + "random which will randomly sellect a gif at random!"),
+             description = ("Just type " + prefix + "wiafus to get a lits of avaliable wiafus \n\n Type " + prefix + " folowed by a name of a waifu in order to get a gif of that character \n\n Finaly we have " + prefix + "random which will randomly sellect a gif at random!"),
              colour = discord.Colour.magenta()
              )
         embed.set_author(name="Help", icon_url="https://cdn.discordapp.com/app-icons/486911878996557839/17fd735ea2a33f992274583814498ee7")
