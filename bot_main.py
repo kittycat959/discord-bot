@@ -4,7 +4,7 @@ import time
 import os
 
 #setting up the connections
-
+#setting up the connections
 client = discord.Client()
 
 #options for different things
@@ -17,7 +17,7 @@ kobayashi = ["https://i.kym-cdn.com/photos/images/original/001/228/305/8ae.gif",
 lucoa = ["https://i.kym-cdn.com/photos/images/newsfeed/001/230/217/0af.gif","https://media.tenor.com/images/69c4c3883286f8476fb0c8524890feea/tenor.gif","https://i.pinimg.com/originals/e2/24/6c/e2246c49cabff7a3683892e7913d3e22.gif","https://thumbs.gfycat.com/HomelyWhiteHapuku-size_restricted.gif"]
 saikawa = ["https://thumbs.gfycat.com/CarefulLividGermanspaniel-size_restricted.gif","https://thumbs.gfycat.com/SlushyJauntyBats-size_restricted.gif","https://media1.tenor.com/images/6c3d6958671a4d476f7cb7acd9b42462/tenor.gif?itemid=7807792","https://i.pinimg.com/originals/c2/76/31/c2763106fae32740cfaea638300242a6.gif","https://i.kym-cdn.com/photos/images/newsfeed/001/224/085/326.gif"]
 
-megumin = ["https://media.tenor.com/images/2a5e22774498fbda42cccbb3bd4d49f3/tenor.gif","https://media1.tenor.com/images/f4dc9b8602807ccc73d1579d9f59a1cd/tenor.gif?itemid=5827518","https://i.pinimg.com/originals/59/29/11/59291146fc51ddaadf559a8ad69e1970.gif","https://orig00.deviantart.net/904b/f/2016/145/1/5/suba3_by_artemsan15-da3t1zv.gif","https://media3.giphy.com/media/eBN6oifiv4k5G/giphy.gif","https://thumbs.gfycat.com/GlaringRawEasteuropeanshepherd-small.gif","https://78.media.tumblr.com/095f6406be298d5be2a4ffb9fbf1ea77/tumblr_o6dhloXs6r1ue9gfbo1_500.gif","https://i.pinimg.com/originals/68/77/5b/68775be127cbc43346107697e1a012c6.gif","https://78.media.tumblr.com/cbadfb4245f483cf7f4676f2e344e34a/tumblr_otpwppyzNK1u0xk60o2_r1_500.gif"]
+megumin=["https://media.tenor.com/images/2a5e22774498fbda42cccbb3bd4d49f3/tenor.gif","https://media1.tenor.com/images/f4dc9b8602807ccc73d1579d9f59a1cd/tenor.gif?itemid=5827518","https://i.pinimg.com/originals/59/29/11/59291146fc51ddaadf559a8ad69e1970.gif","https://orig00.deviantart.net/904b/f/2016/145/1/5/suba3_by_artemsan15-da3t1zv.gif","https://media3.giphy.com/media/eBN6oifiv4k5G/giphy.gif","https://thumbs.gfycat.com/GlaringRawEasteuropeanshepherd-small.gif","https://78.media.tumblr.com/095f6406be298d5be2a4ffb9fbf1ea77/tumblr_o6dhloXs6r1ue9gfbo1_500.gif","https://i.pinimg.com/originals/68/77/5b/68775be127cbc43346107697e1a012c6.gif","https://78.media.tumblr.com/cbadfb4245f483cf7f4676f2e344e34a/tumblr_otpwppyzNK1u0xk60o2_r1_500.gif"]
 aqua = ["https://media.giphy.com/media/sFeoAaOqgEuTS/giphy.gif","https://media.giphy.com/media/n9NCmeG9wf7wY/giphy.gif","https://78.media.tumblr.com/66718aa3dcfe247aa608373e76642a60/tumblr_om2rt9w1WN1u2inano1_500.gif","https://media.giphy.com/media/oiyJ7Gluc50Zy/giphy.gif","https://media.giphy.com/media/qQNxoVSUdWhMs/giphy.gif"]
 darkness = ["https://pa1.narvii.com/6560/9df2912995b8b7f0ffed65249f48a289e66c069a_hq.gif","https://media1.tenor.com/images/3081ad375292d7bbc06031bf7ad4960a/tenor.gif?itemid=7592940","https://i.imgur.com/MEc7OOW.gif","http://gifimage.net/wp-content/uploads/2017/10/darkness-konosuba-gif-1.gif","https://i.pinimg.com/originals/3a/ba/1d/3aba1d23c0a2a322cbca9f5b6898b795.gif"]
 satou = ["https://vignette.wikia.nocookie.net/konosuba/images/0/0f/Kona_Suba.GIF/revision/latest?cb=20170130200606","https://i.kym-cdn.com/photos/images/original/001/141/487/7a8.gif","https://pa1.narvii.com/6054/9cefc24515b5ce43e96825e72a6b0290e024e742_hq.gif","https://media1.tenor.com/images/d2dd8122eac32df3ad87b436b90c3dd5/tenor.gif?itemid=7333081","https://78.media.tumblr.com/a4d28ee86770548b9bff82396b0c6b3d/tumblr_o9gtypfQH51sg8uefo2_540.gif"]
@@ -33,12 +33,6 @@ zero_two = ["https://i.pinimg.com/originals/63/ca/58/63ca58fb23c0901176abf1787fa
 
 emilia = ["https://media.giphy.com/media/6srDH6BmmaMvK/giphy.gif","https://media.giphy.com/media/KvoLqIZle18Tm/giphy.gif","https://66.media.tumblr.com/fe779fcee196b534f2dfda13e8eb9de4/tumblr_ottqn7ya8c1v14hqvo1_500.gif","http://pa1.narvii.com/6145/fb722551559221f7dbed9e44299856f507c4222f_hq.gif"]
 
-#generating the list of manga
-manga = ["tokyo ghoul","https://drive.google.com/drive/folders/1XTEfNIaklkYtqfDEs65k4z1QhHOV01r2?usp=sharing","comic girls","https://drive.google.com/open?id=1lBEAGTtlWKh-8Nh2t9qpYuFiJtX8GexA"]
-avaliable = ""
-for x in range(0,(int(len(manga)/2))):
-    avaliable = avaliable + manga[x * 2] + ", "
-    
 #generating the wiafu list
 waifus = [kanna,tohru,kobayashi,lucoa,saikawa,megumin,aqua,darkness,satou,kaos,ruki,tsubasa,koyume,fuura,nyaos,zero_two,emilia]
 waifus2 = ["kanna","tohru","kobayashi","lucoa","saikawa","megumin","aqua","darkness","satou","kaos","ruki","tsubasa","koyume","fuura","nayos","zero_two","emilia"]
@@ -58,37 +52,43 @@ async def on_message(message):
     if message.content.startswith(prefix + 'help'):
         msg = ("Hello {0.author.mention} to use the bot first see what characters are currently avaliable use /waifus and then use /(the name of your chosen character)").format(message)
         await client.send_message(message.channel, msg)
-    
-    #the manga function of the bot
-    if message.content.startswith(prefix + 'manga'):
-        msg = ("Hello {0.author.mention} we currently have " + avaliable).format(message)
-        await client.send_message(message.channel, msg)
-
-    elif message.content.replace(prefix, "") in manga:
-        msg = ("Here is the link {0.author.mention}: " + manga[manga.index(message.content.replace(prefix, ""))+1]).format(message)
-        await client.send_message(message.channel, msg)
 
     #specific wiafu
     if message.content.replace(prefix, "") in waifus2:
-        msg = ("Here {0.author.mention} is you waifu gif OwO:  " + random.choice(waifus[waifus2.index(message.content.replace(prefix, ""))])).format(message)
-        await client.send_message(message.channel, msg)
-    
+        embed = discord.Embed(
+            colour = discord.Colour.magenta()
+            )
+        embed.set_image(url= random.choice(waifus[waifus2.index(message.content.replace(prefix, ""))]))
+        embed.set_author(name="Here is your gif OwO", icon_url="https://cdn.discordapp.com/app-icons/486911878996557839/17fd735ea2a33f992274583814498ee7")
+        await client.send_message(message.channel, embed=embed)
+
     #random wiafu function of the bot
     if message.content.startswith(prefix + 'random'):
-        msg = ("Here {0.author.mention} is you random gif OwO:  " + random.choice(random.choice(waifus))).format(message)
-        await client.send_message(message.channel, msg)
-    
+        embed = discord.Embed(
+                colour = discord.Colour.magenta()
+                )
+        embed.set_image(url= random.choice(random.choice(waifus)))
+        embed.set_author(name="Here is your random gif OwO", icon_url="https://cdn.discordapp.com/app-icons/486911878996557839/17fd735ea2a33f992274583814498ee7")
+        await client.send_message(message.channel, embed=embed)
+
     #the wiafus function of the bots
     if message.content.startswith(prefix + 'wiafus'):
-        msg = ("Hello {0.author.mention} we currently have " + avaliablewiafu).format(message)
-        await client.send_message(message.channel, msg)
-        
+        embed = discord.Embed(
+            description = ("Hello, we currently have " + avaliablewiafu),
+            colour = discord.Colour.magenta()
+            )
+        embed.set_author(name="Here is your gif OwO", icon_url="https://cdn.discordapp.com/app-icons/486911878996557839/17fd735ea2a33f992274583814498ee7")
+        await client.send_message(message.channel, embed=embed)
+
     if message.content.startswith(prefix + 'waifus'):
-        msg = ("Hello {0.author.mention} we currently have " + avaliablewiafu).format(message)
-        await client.send_message(message.channel, msg)
-    
-    
-    #the owo function of the bot    
+        embed = discord.Embed(
+            description = ("Hello, we currently have " + avaliablewiafu),
+            colour = discord.Colour.magenta()
+            )
+        embed.set_author(name="Here is your gif OwO", icon_url="https://cdn.discordapp.com/app-icons/486911878996557839/17fd735ea2a33f992274583814498ee7")
+        await client.send_message(message.channel, embed=embed)
+
+    #the owo function of the bot
     if 'owo' in message.content:
         msg = ("{0.author.mention} whats this?" ).format(message)
         await client.send_message(message.channel, msg)
