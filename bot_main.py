@@ -50,8 +50,12 @@ async def on_message(message):
 
     #making the help command
     if message.content.startswith(prefix + 'help'):
-        msg = ("Hello {0.author.mention} to use the bot first see what characters are currently avaliable use /waifus and then use /(the name of your chosen character)").format(message)
-        await client.send_message(message.channel, msg)
+       embed = discord.Embed(
+            description = ("Just type" + prefix + "wiafus to get a lits of avaliable wiafus \n Type " + prefix + " folowed by a name of a waifu in order to get a gif of that character \n and finaly we have " + prefix + "random which will randomly sellect a gif at random! (fancy stuff I know)"),
+            colour = discord.Colour.magenta()
+            )
+        embed.set_author(name="Help", icon_url="https://cdn.discordapp.com/app-icons/486911878996557839/17fd735ea2a33f992274583814498ee7")
+        await client.send_message(message.channel, embed=embed)
 
     #specific wiafu
     if message.content.replace(prefix, "") in waifus2:
