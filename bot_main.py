@@ -125,7 +125,7 @@ async def on_message(message):
         await client.send_message(message.channel, embed=embed)
 
     #the owo function of the bot
-    if 'owo' in message.content.upper():
+    if 'OWO' in message.content.upper():
         msg = ("{0.author.mention} whats this?" ).format(message)
         await client.send_message(message.channel, msg)
 
