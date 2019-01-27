@@ -37,6 +37,8 @@ emilia = ["https://media.giphy.com/media/6srDH6BmmaMvK/giphy.gif","https://media
 kiss = ["https://thumbs.gfycat.com/FondEvergreenIcterinewarbler-size_restricted.gif","https://media1.tenor.com/images/105a7ad7edbe74e5ca834348025cc650/tenor.gif?itemid=9158317","https://i.imgur.com/sGVgr74.gif","https://pa1.narvii.com/5746/28adf462fa4a2391fb044405655c67b8f5f1c7b9_hq.gif","https://lh3.googleusercontent.com/-Tncc7L3z88A/WvODFn1dO7I/AAAAAAAKy4A/gPGnvMieeeQTVnhNO3ioc679FRhPDxDzwCJoC/w530-h298-n-rw/Omake%2BGif%2BAnime%2B-%2BDarling%2Bin%2Bthe%2BFranXX%2B-%2BOP%2B-%2BZero%2BTwo%2BKisses%2BHiro.gif","https://media1.tenor.com/images/b6e36a6ed9b963e0f004bc0558405cb2/tenor.gif?itemid=12307773","https://data.whicdn.com/images/109154232/original.gif","http://24.media.tumblr.com/05f0f56f99dadb710e7307ebeac24129/tumblr_mzu1bv7dU61qbvovho1_500.gif"]
 hug = ["https://i.imgur.com/wOmoeF8.gif","https://media.giphy.com/media/xJlOdEYy0r7ZS/giphy.gif","http://i.imgur.com/tuH4gqZ.gif","https://i.pinimg.com/originals/02/7e/0a/027e0ab608f8b84a25b2d2b1d223edec.gif","http://49.media.tumblr.com/ce3aad3f1d570fa06c253abfccf36d1b/tumblr_msexao8iX51re6rdoo1_500.gif","https://cdn.weeb.sh/images/r1v2_uXP-.gif","https://cdn.weeb.sh/images/HyNJIaVCb.gif","https://cdn.weeb.sh/images/S1a0DJhqG.gif","https://cdn.weeb.sh/images/S1a0DJhqG.gif","https://cdn.weeb.sh/images/HyllFdmwZ.gif","https://cdn.weeb.sh/images/Sk80wyhqz.gif","https://cdn.weeb.sh/images/rkYetOXwW.gif"]
 lick = ["https://cdn.weeb.sh/images/Bkxge0uPW.gif","https://cdn.weeb.sh/images/rJ6hrQr6-.gif","https://cdn.weeb.sh/images/BkvTBQHaZ.gif","https://cdn.weeb.sh/images/S1Ill0_vW.gif","https://cdn.weeb.sh/images/Hkknfs2Ab.gif","https://cdn.weeb.sh/images/Bkagl0uvb.gif","https://cdn.weeb.sh/images/Sk15iVlOf.gif"]
+slap = ["https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif","https://media.giphy.com/media/LB1kIoSRFTC2Q/giphy.gif","https://media.giphy.com/media/iREUC7qrjN4vC/giphy.gif","https://media.giphy.com/media/VEmm8ngZxwJ9K/giphy.gif","https://media.giphy.com/media/L7iHfUrBk3cqY/giphy.gif","https://thumbs.gfycat.com/CompetentIncredibleInganue-small.gif"]
+chop = ["https://media.giphy.com/media/p0gkfdxY0PSPC/giphy-downsized-large.gif","https://media1.tenor.com/images/4b66374f221fd32a89c3a4e7a3606d68/tenor.gif?itemid=5546669","https://thumbs.gfycat.com/TangibleOffbeatHare-size_restricted.gif","https://pa1.narvii.com/6524/c4bd1acebea963e79321f53c223cb09807363141_hq.gif","https://media.giphy.com/media/NbbvO8hP5ZbeE/giphy.gif","https://i.gifer.com/BHKb.gif"]
 
 #generating the wiafu list
 waifus = [kanna,tohru,kobayashi,lucoa,saikawa,megumin,aqua,darkness,satou,kaos,ruki,tsubasa,koyume,fuura,nyaos,zero_two,emilia]
@@ -46,8 +48,8 @@ for x in range(0,int(len(waifus2))):
     avaliablewiafu = avaliablewiafu + waifus2[x] + ", "
 
 #generating the fun gifs list
-fun = [kiss,hug,lick]
-fun2 = ["kiss","hug","lick"]
+fun = [kiss,hug,lick,slap,chop]
+fun2 = ["kiss","hug","lick","slap","chop"]
 avaliablefun = ""
 for x in range(0,int(len(fun2))):
     avaliablefun = avaliablefun + fun2[x] + ", "
