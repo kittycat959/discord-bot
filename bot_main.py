@@ -39,6 +39,9 @@ hug = ["https://i.imgur.com/wOmoeF8.gif","https://media.giphy.com/media/xJlOdEYy
 lick = ["https://cdn.weeb.sh/images/Bkxge0uPW.gif","https://cdn.weeb.sh/images/rJ6hrQr6-.gif","https://cdn.weeb.sh/images/BkvTBQHaZ.gif","https://cdn.weeb.sh/images/S1Ill0_vW.gif","https://cdn.weeb.sh/images/Hkknfs2Ab.gif","https://cdn.weeb.sh/images/Bkagl0uvb.gif","https://cdn.weeb.sh/images/Sk15iVlOf.gif"]
 slap = ["https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif","https://media.giphy.com/media/LB1kIoSRFTC2Q/giphy.gif","https://media.giphy.com/media/iREUC7qrjN4vC/giphy.gif","https://media.giphy.com/media/VEmm8ngZxwJ9K/giphy.gif","https://media.giphy.com/media/L7iHfUrBk3cqY/giphy.gif","https://thumbs.gfycat.com/CompetentIncredibleInganue-small.gif"]
 chop = ["https://media.giphy.com/media/p0gkfdxY0PSPC/giphy-downsized-large.gif","https://media1.tenor.com/images/4b66374f221fd32a89c3a4e7a3606d68/tenor.gif?itemid=5546669","https://thumbs.gfycat.com/TangibleOffbeatHare-size_restricted.gif","https://pa1.narvii.com/6524/c4bd1acebea963e79321f53c223cb09807363141_hq.gif","https://media.giphy.com/media/NbbvO8hP5ZbeE/giphy.gif","https://i.gifer.com/BHKb.gif"]
+poke = ["https://media.giphy.com/media/WvVzZ9mCyMjsc/giphy.gif","https://i.gifer.com/S00v.gif","https://thumbs.gfycat.com/ConventionalIlliterateFattaileddunnart-size_restricted.gif","https://gifimage.net/wp-content/uploads/2017/09/anime-poke-gif-12.gif","https://media1.tenor.com/images/48086974f33a3e0114b2e0387f812ae4/tenor.gif?itemid=12360399"]
+pat = ["https://thumbs.gfycat.com/FlimsyDeafeningGrassspider-small.gif","https://i.imgur.com/WyMHuyL.gif","http://i.imgur.com/laEy6LU.gif","https://66.media.tumblr.com/cadf248febe96afdd6869b7a95600abb/tumblr_onjo4cGrZE1vhnny1o1_500.gif","https://i.pinimg.com/originals/2e/62/cd/2e62cd7491be4ec9f0ec210d648b80fd.gif","https://memestatic.fjcdn.com/gifs/Headpat_1c72ee_6500559.gif","https://gifimage.net/wp-content/uploads/2017/09/anime-head-pat-gif-9.gif","https://thumbs.gfycat.com/ImpurePleasantArthropods-small.gif","https://media.tenor.com/images/a671268253717ff877474fd019ef73e9/tenor.gif"]
+cuddle = ["https://gifimage.net/wp-content/uploads/2017/09/anime-cuddle-gif-9.gif","https://gifimage.net/wp-content/uploads/2017/09/anime-hugging-gif-11.gif","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ5XA7cjAaA397gZTzcr938jpbtxwCLkbDKsRPVQB6GQIFQTIviA]","https://media.tenor.com/images/e101723c4fdd188e975fe6f0a6aba874/tenor.gif","https://media1.tenor.com/images/4a211d5c5d076ad8795d8a82f9f01c29/tenor.gif?itemid=13221038","https://media.tenor.com/images/9dd8181420b4b7938463bbe69285293d/tenor.gif","https://media1.tenor.com/images/e000639b39298e8e5022f80adc8768b4/tenor.gif?itemid=12050689"]
 
 #generating the wiafu list
 waifus = [kanna,tohru,kobayashi,lucoa,saikawa,megumin,aqua,darkness,satou,kaos,ruki,tsubasa,koyume,fuura,nyaos,zero_two,emilia]
@@ -48,8 +51,8 @@ for x in range(0,int(len(waifus2))):
     avaliablewiafu = avaliablewiafu + waifus2[x] + ", "
 
 #generating the fun gifs list
-fun = [kiss,hug,lick,slap,chop]
-fun2 = ["kiss","hug","lick","slap","chop"]
+fun = [kiss,hug,lick,slap,chop,poke,pat,cuddle]
+fun2 = ["kiss","hug","lick","slap","chop","poke","pat","cuddle"]
 avaliablefun = ""
 for x in range(0,int(len(fun2))):
     avaliablefun = avaliablefun + fun2[x] + ", "
